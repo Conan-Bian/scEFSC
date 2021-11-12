@@ -1,0 +1,21 @@
+Package: scEFSC
+Type: Package
+Title: accurate single-cell RNA-seq data analysis via ensemble consensus clustering based on multiple feature selections
+Version: 0.1.0
+Authors@R: c(
+    person("Chuang", "Bian", , "bianchuang19@mails.jlu.edu.cn", role = c("aut", "cre"))
+    )
+Maintainer: Chuang Bian <bianchuang19@mails.jlu.edu.cn>
+Description:  scEFSC is a clustering algorithm for single-cell RNA-seq data using ensemble feature selection. 
+    The scEFSC software package can perform clustering on single-cell data.
+License: LGPL
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.4)
+Imports: reticulate,  scDHA,  doParallel,  foreach,  keras,  tensorflow,  SC3, SingleCellExperiment,  SIMLR,  Seurat,  SHARP, cidr,  SINCERA, mclust,  clues,  pcaReduce,  SIMLR, caret, Rphenograph,  monocle,  RaceID
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel, RcppAnnoy
+RoxygenNote: 7.1.0
+Suggests: knitr, SingleCellExperiment, mclust
+NeedsCompilation: yes
+VignetteBuilder: knitr
+SystemRequirements: GNU make
