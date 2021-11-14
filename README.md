@@ -1,4 +1,4 @@
-# scEFSC
+# scEFSC: Accurate Single-cell RNA-seq Data Analysis via Ensemble Consensus Clustering Based on Multiple Feature Selections
 We developed a single-cell consensus clustering algorithm based on ensemble feature selection (scEFSC) for scRNA-seq data analysis in an ensemble manner. The input of the proposed scEFSC was the scRNA-seq data with rows as genes and columns as samples. To begin data pre-processing was performed using a log2 transformation to normalize the data and then genes detected in the normalized data in less than 2% of the cells were removed to filter out the low-level expressed genes from the scRNA-seq data. The overall framework of our proposed scEFSC is summarized in the figure as follow:
 ![Image text](https://raw.githubusercontent.com/Conan-Bian/scEFSC/main/img/scEFSC.png) 
 
