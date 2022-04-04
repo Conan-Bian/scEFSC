@@ -22,8 +22,19 @@ To use our package for new data, the package includes these functions:
 
 # Example
 library("scEFSC")
+
 #read data
+
 d <- readRDS("data/yan.rds")
+
 data <- assay(d)
+
 label <- as.numeric(factor(d$cell_type1))
+
 n <- length(unique(label))
+
+#run scEFSC
+
+scEFSC_labels <- scEFSC(data, n, normalize = F, dim1 = 5000,dim2 = 2000)
+
+#scEFSC_labels is the list of labels obtained by scEFSC.
