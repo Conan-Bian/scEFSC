@@ -11,6 +11,7 @@ In phase B, we applied several different scRNA-seq clustering algorithms to clus
 - install.packages("scEFSC_0.1.0.tar.gz",repos = NULL)
 - If necessary, install miniconda: `reticulate::install_miniconda(force = T)`
 - Install scikit-feature in python,  please visit https://jundongl.github.io/scikit-feature/index.html
+- Install tensorflow and keras in python using: `keras::install_keras(tensorflow = "1.15.0")`
 - For more information about installation of keras, please visit https://keras.rstudio.com/
 
 # How to use the package for new data 
