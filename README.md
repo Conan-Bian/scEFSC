@@ -41,7 +41,10 @@ scEFSC_labels <- scEFSC(data, n, normalize = F, dim1 = 5000,dim2 = 2000)
 
 #scEFSC_labels is the list of labels obtained by scEFSC.
 
+
+
 #tsne
+
 library(Rtsne)
 
 data_unique <- unique(t(data))
