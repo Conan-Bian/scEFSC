@@ -40,3 +40,24 @@ n <- length(unique(label))
 scEFSC_labels <- scEFSC(data, n, normalize = F, dim1 = 5000,dim2 = 2000)
 
 #scEFSC_labels is the list of labels obtained by scEFSC.
+
+#tsne
+library(Rtsne)
+
+data_unique <- unique(t(data))
+
+tsne_out <- Rtsne(data_unique,pca=FALSE,dims=2,
+                  perplexity=10,theta=0.0)
+                  
+png(filename='test.png')
+
+plot(tsne_out$Y,col=scEFSC_labels, asp=1,pch=20,
+     xlab = "tSNE_1",ylab = "tSNE_2",main = "tSNE plot")
+     
+abline(h=0,v=0,lty=2,col="gray")
+
+legend("topright",title = "Labels",inset = 0.01,
+       legend = unique(scEFSC_labels),pch=16,
+       col = unique(scEFSC_labels))
+       
+dev.off()
