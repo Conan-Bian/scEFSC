@@ -22,4 +22,8 @@ To use our package for new data, the package includes these functions:
 
 # Example
 library("scEFSC")
-
+#read data
+d <- readRDS("data/yan.rds")
+data <- assay(d)
+label <- as.numeric(factor(d$cell_type1))
+n <- length(unique(label))
