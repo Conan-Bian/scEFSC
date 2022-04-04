@@ -20,6 +20,6 @@ To use our package for new data, the package includes these functions:
 - In order to run scEFSC, you need to have feature_selection.py in your run directory. You can find feature_selection.py in the files.
 - More detail about parameters for each function could be found in the manual.
 
-#Example
+# Example
 library("scEFSC")
 
