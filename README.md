@@ -21,6 +21,7 @@ To use our package for new data, the package includes these functions:
 
 # Example
 library("scEFSC")
+
 library("SingleCellExperiment")
 
 #read data
